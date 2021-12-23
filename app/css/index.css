@@ -12,7 +12,24 @@ body {
 #content {
   overflow-x: hidden;
 }
-
+/* .navbar.navbar-expand-lg  {
+  
+  width: 100%; 
+  
+  top: 0;
+  margin-bottom: 50px;
+ 
+  
+}  */
+.sticky {
+  position: fixed;
+  box-sizing: border-box;
+  top: 0;
+  border: #007bb7 1px solid;
+  width: 100%;
+ z-index: 2;
+ 
+}
 .lsls {
   background-color: #00ffff !important;
   color: black !important;
