@@ -438,9 +438,11 @@ nav .dropbtn {
     font-weight: 800;
     color: #ffffff;
     font-family: PT Sans;
-    padding: 16px;
-    border: none;
-    margin-top: 12px;
+    padding: 10px 10px;
+    border: 1px solid ;
+		margin-top: 14px;
+		margin-bottom: 14px;
+		border-radius: 10px;
 }
 
 .dropbtn:hover {
