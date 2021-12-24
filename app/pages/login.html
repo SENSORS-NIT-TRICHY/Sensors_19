@@ -5,31 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="../css/login.css"/>
-    <a class="navbar-brand" href="#">
+    <title>Sensors-Registration</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link href="https://fonts.google.com/selection?category=Sans+Serif&query=MOn&selection.family=Montserrat" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet"/>
+    <a class="navbar-brand" href="../index.html">
     <img src="../assets/logos/Logo.png" width="100" height="35" style="margin:10px 165px" >
 	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     </a>
+
 </head>
 <body>
 	<div class="container">
-        	<div class="title">Sensors-Login</div>
+		<p style="font-size: 50px; text-align:center;">Sensors-Login</p>
 		<br><br><br>
-		<form>
+		<div class="formContainer">
+		<form action="http://localhost:3000/api/user/register" method="post">
+		<div class="form-groupleft">
 			<label for="email">Email</label>
-			<input type="email" id="email" name="Email" class="username" placeholder="Email ID" required>
+			<input type="email" name="Email" id="email" class="username" placeholder="Email ID" required>
 			<br><br>
-			<label for="password">Password</label>
-			<input type="password" id="password" name="password" class="password" placeholder="Password" required>
-			<br><br>
+			<label for="password">Password </label>
+			<input type="password" name="password" id="password" class="password" placeholder="Password" required>
+			<br><br><br>
 			<button class="submit" id="submit-btn">Submit</button>
-			<!-- <input type="submit" value="Sign In" class="submit" id="submit-btn"> -->
-			<p>Don't have an account? Register <a href="./register.html">here</a></p>
-		</form>
-	</div>
+			<br>
+			<div class="redirect"><p>Dont have an account? Register <a href="./register.html">here</a></p></div>
+		</div>
+		<br><br><br>
+	    </form>
+        </div>
+    </div>
 
-	<script>
+
+    <script>
 		const sendData = async()=>{
 			const email = document.getElementById("email").value;
 			const password = document.getElementById("password").value;
@@ -52,5 +62,51 @@
 			sendData();
 		});
 	</script>
+
+      <footer class="mainfooter" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <p style="color: white; font-size: 15px; text-align: center">
+            Made with
+            <span style="color: red; display: inline-flex; font-size: 1.8em">&hearts;</span>
+            by Sensors NIT Trichy
+          </p>
+          <hr align="center" style="border-color: white; width: 320px" />
+
+          <ul class="social-network social-circle" style="
+                display: flex !important;
+                justify-content: center !important;
+              ">
+            <li>
+              <a href="https://www.facebook.com/sensorsNITTrichy/" target="_blank" class="icoFacebook"
+                title="Facebook"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="https://in.linkedin.com/company/sensors-nitt" target="_blank" class="icoLinkedin"
+                title="Linkedin"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/sensorsnitt/" target="_blank" class="icoFacebook" title="Instagram"><i
+                  class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/officialsensors" target="_blank" class="icoLinkedin" title="Twitter"><i
+                  class="fa fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
+
+<script>
+  $('#articles').hide()
+  $(window).on('load', function () {
+    $('#articleLoader').hide()
+    $('#articles').show()
+  })
+</script>
 </html>

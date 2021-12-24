@@ -7,19 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sensors-Registration</title>
     <link rel="stylesheet" href="../css/register.css"/> 
-    <a class="navbar-brand" href="#">
+    <link href="https://fonts.google.com/selection?category=Sans+Serif&query=MOn&selection.family=Montserrat" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet"/>
+    <a class="navbar-brand" href="../index.html">
     <img src="../assets/logos/Logo.png" width="100" height="35" style="margin:10px 165px" >
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     </a>
 </head>
-
 <body>
     <div class="container">
-	<br><br><br>    
-        <div class="title">Sensors-Registration</div>
-        <div class="formContainer">
+	<p style="font-size: 50px; text-align:center;">Sensors-Registration</p>
+	<br><br><br>
+	<div class="formContainer">
         <form action="http://localhost:3000/api/user/register" method="post">
 		<div class="form-groupleft">
-			<br><br><br>
 			<label for="name"> Name</label>
 			<input type="text" name="Name" class="name" placeholder="Your name..*" required>
 			<br>
@@ -33,7 +35,7 @@
 			<input type="text" maxlength="14" pattern="[+][0-9]{2}[-][0-9]{10}" name="MobileNo" class="phoneno" placeholder="+91-1234567890*" required>
 			
 		</div>
-		<br><br><br>
+		<br><br>
 		<div class="form-groupright">
                 	<label for="department">Department</label>
                 	<input type="text" name="Department" class="department" placeholder="Your Department..*" required>
@@ -45,11 +47,55 @@
 			<input type="text" name="College" class="college" placeholder="Your College...*" required>
 			<p>Already have an account? Login <a href="./login.html">here</a></p>
 		</div>
+		<br><br><br>
 		<input type="submit" value="Sign Up" class="submit">
 	    </form>
         </div>
-	<!-- <br><br> -->
     </div>
+      <footer class="mainfooter" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <p style="color: white; font-size: 15px; text-align: center">
+            Made with
+            <span style="color: red; display: inline-flex; font-size: 1.8em">&hearts;</span>
+            by Sensors NIT Trichy
+          </p>
+          <hr align="center" style="border-color: white; width: 320px" />
+
+          <ul class="social-network social-circle" style="
+                display: flex !important;
+                justify-content: center !important;
+              ">
+            <li>
+              <a href="https://www.facebook.com/sensorsNITTrichy/" target="_blank" class="icoFacebook"
+                title="Facebook"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="https://in.linkedin.com/company/sensors-nitt" target="_blank" class="icoLinkedin"
+                title="Linkedin"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/sensorsnitt/" target="_blank" class="icoFacebook" title="Instagram"><i
+                  class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/officialsensors" target="_blank" class="icoLinkedin" title="Twitter"><i
+                  class="fa fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
+
+<script>
+  $('#articles').hide()
+  $(window).on('load', function () {
+    $('#articleLoader').hide()
+    $('#articles').show()
+  })
+</script>
 </html>
