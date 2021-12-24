@@ -1,8 +1,8 @@
 <html>
         <head>
                 <title>Sensors '21</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta content="width=device-width, initial-scale=1" name="viewport" />
+                <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0"> -->
+                <meta content="width=device-width, initial-scale=1" name="viewport" />
                 <link
                         rel="stylesheet"
                         type="text/css"
@@ -39,7 +39,6 @@
                         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
                         crossorigin="anonymous"
                 ></script>
-                <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
@@ -66,9 +65,7 @@
                         media="all"
                         href="../css/style.css"
                 />
-                <link rel="stylesheet" 
-			href="../css/index.css" 
-		/>
+                <link rel="stylesheet" href="../css/index.css" />
                 <script>
                         function openModal(ola, j) {
                                 var i
@@ -112,30 +109,24 @@
                                                 <li class="nav-item">
                                                         <a class="nav-link" href="../pages/webinars.html">Webinars</a>
                                                 </li>
-
+                                                <li class="nav-item">
+                                                  <a class="nav-link" href="../pages/workshops.html">Workshops</a>
+                                                </li>
                                                 <li class="nav-item">
                                                         <a class="nav-link" href="../pages/articles.html">Articles</a>
                                                 </li>
                                                 <li class="nav-item">
                                                         <a class="nav-link" href="../pages/events.html">Events</a>
                                                 </li>
-                                                <li class="nav-item">
-                                                        <a class="nav-link" href="../pages/winners.html">Winners</a>
-                                                </li>
+						                                    <li class="nav-item">
+							                                          <a class="nav-link" href="../pages/winners.html">Winners</a>
+						                                    </li>	
                                                 <li class="nav-item">
                                                         <a class="nav-link" href="../pages/covid_tech.html">Covid-Tech</a>
                                                 </li>
 
                                                 <li class="nav-item">
                                                         <a class="nav-link" href="../pages/team.html">Team</a>
-                                                </li>
-                                                
-                                                <li class="nav-item">
-                                                  <a class="nav-link" href="../pages/login.html">Login</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                  <a class="nav-link" href="../pages/register.html">Register</a>
                                                 </li>
                                         </ul>
                                 </div>
@@ -457,39 +448,25 @@
       </div>
     </div> -->
 
-                <h1 style="margin: 3%; text-align: center; margin-top: 80px;">
-                        <a style="color: white; font-size: 50px">Events</a>
-		</h1>
-		<br>
-    <div class="ui link cards row" id="events-data">
-    
-    </div>
-		<!-- <div class="flex-column">
-			<div class="riddle-month">
-			<img
-				src="../assets/Images/Events/Riddle Month/Intro.jpeg"
-				height=600px
-				width=600px
-			/>
-			<br><br>
-			
+		<h1 style="margin: 3%; text-align: center">
+                        <a style="color: white; font-size: 40px">Riddle Month</a>
+                </h1>
+                <div class="d-flex justify-content-center">
                         <img
-                       	 	src="../assets/Images/Events/Riddle Month/Rulebook.jpeg"
-				height=600px
-				width=600px
-			/>
-			</div>
-		</div>
-		
-                <br><br>
-                <h3 style="margin: 1%; text-align: center">
-                        <a style="color: white; font-size: 40px">Themes</a>
-                </h3> -->
-		
+                                class="riddle-month"
+                                src="../assets/Images/Events/Riddle Month/Intro.jpeg"
+                        />
+                        <img
+                                class="riddle-month"
+                                src="../assets/Images/Events/Riddle Month/Rulebook.jpeg"
+                        />
+                </div>
+		<br><br><br>
+		<h3 style="margin: 1%; text-align: center">
+                        <a style="color: white; font-size: 30px">Themes</a>
+                </h3>
 
-		
-	
-              
+              		
 <style>
       #slider {
         width: 100%;
@@ -519,89 +496,54 @@
         box-sizing: border-box;
         white-space: normal;
       }
-        .image-slider {
-		text-align: center;      
-        }
-       .flex-column{
-                text-align:center;
-       }
+	.image-slider {
+		text-align:center;
+ 	}
+
+	.d-flex justify-content-center .riddle-month{
+		text-align:center;
+	}
+
 </style>
   </head>
-  
   <body>
-        <!-- <div class="image-slider">
+	<div class="image-slider">
 
         <ul id="slider">
         <li>
-		<img src="../assets/Images/Events/Riddle Month/Theme_Space.jpeg" height="600px" width="600px"> 
+                <img src="../assets/Images/Events/Riddle Month/Theme_Space.jpeg" width="600" height="600"> 
         </li>
         <li>
-		<img src="../assets/Images/Events/Riddle Month/THEME2.jpg" height="600px" width="600px">
+                <img src="../assets/Images/Events/Riddle Month/THEME2.jpg" width="600" height="600">
         </li>
-        <li>
-		<img src="../assets/Images/Events/Riddle Month/Sensors_Gadgets.png" height="600px" width="600px">
-        </li>
-        <li>
-		<img src="../assets/Images/Events/Riddle Month/THEME.jpg" height="600px" width="600px">
-        </li>
+	<li>
+		<img src="../assets/Images/Events/Riddle Month/Sensors_Gadgets.png" width="600" height="600">
+	</li>
+	<li>
+		<img src="../assets/Images/Events/Riddle Month/THEME.jpg" width="600" height="600">
+	</li>	
         </ul>
 
         </div> -->
         <div class="ui cont">
+	
+	</div>
    <script>
       // Slide every slideDelay seconds
-      const fetchData = async ()=>{
-        const res = await axios.get("http://localhost:3000/api/events");
-        const eventsContainer = document.getElementById("events-data");
-        let eventsData = '';
-        res.data.map((ele)=>{
-          const img = ele.Picture;
-          const date = ele.StartDate;
-          // console.log(date,img);
-          const desc = ele.Description;
-          const name = ele.EventName;
-          eventsData+=`
-            <div class="card col-sm-4">
-          <div class="image">
-            <img
-              src="${img}"
-              style="height: 350px"
-            />
-          </div>
-          <div class="content">
-            <div class="header">
-                ${name}
-            </div>
-            <div class="description">
-              ${desc}
-            </div>
-          </div>
-          <a
-            class="header"
-            href="#"
-          >
-            <div class="ui bottom attached button">Register</div>
-          </a>
-        </div>
-          `
-        });
-        eventsContainer.innerHTML = eventsData;
-      }
-      fetchData();
-      // const slideDelay = 3000;
+      const slideDelay = 3000;
 
-      // const dynamicSlider = document.getElementById("slider");
+      const dynamicSlider = document.getElementById("slider");
 
-      // var curSlide = 0;
-      // window.setInterval(()=>{
-      //   curSlide++;
-      //   if (curSlide === dynamicSlider.childElementCount) {
-      //     curSlide = 0;
-      //   }
+      var curSlide = 0;
+      window.setInterval(()=>{
+        curSlide++;
+        if (curSlide === dynamicSlider.childElementCount) {
+          curSlide = 0;
+        }
 
-      //   // Actual slide
-      //   dynamicSlider.firstElementChild.style.setProperty("margin-left", "-" + curSlide + "01%");
-      // }, slideDelay);
+        // Actual slide
+        dynamicSlider.firstElementChild.style.setProperty("margin-left", "-" + curSlide + "00%");
+      }, slideDelay);
 
     </script>
     </div>
@@ -616,7 +558,7 @@
                                                         >
                                                         by Sensors NIT Trichy
                                                 </p>
-                                                <hr style="border-color: white; width: 320px; align-items:center" />
+                                                <hr align="center" style="border-color: white; width: 320px" />
 
                                                 <ul
                                                         class="social-network social-circle"

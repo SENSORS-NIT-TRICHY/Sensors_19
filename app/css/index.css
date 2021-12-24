@@ -23,6 +23,25 @@ body::-webkit-scrollbar-track
 
 
 
+body::-webkit-scrollbar-track
+{
+	border: 1px solid black;
+	background-color: black;
+}
+
+body::-webkit-scrollbar
+{
+	width: 13px;
+	background-color: black;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	/* background-color: #15f4ee;	 */
+background:  linear-gradient(#15f4ee, black);
+
+  border-radius: 15px; 
+}
 
 #content {
   overflow-x: hidden;
