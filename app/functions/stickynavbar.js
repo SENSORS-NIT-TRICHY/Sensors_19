@@ -1,8 +1,10 @@
 // When the user scrolls the page, execute myFunction
 
-if(window.location.pathname.includes('index.html') || window.location.pathname.includes('covid_tech.html') || window.location.pathname.includes('winners.html'))
+if(window.location.pathname.includes('index.html') || window.location.pathname.includes('covid_tech.html'))
 {
-    window.onscroll = function() {//console.log("scrolling normally")
+  
+  window.onscroll = function() {
+    console.log("scrolling normally")
     myFunction('main')};
 
 }
@@ -11,7 +13,7 @@ else
     //console.log("bruh");
     let uicont = document.querySelector("body")
     uicont.addEventListener("scroll",function() {
-  //      console.log("scrolling normally")
+        console.log("scrolling not  normally")
         myFunction('notmain')})
 }
 // Get the navbar
@@ -35,6 +37,7 @@ function myFunction(status) {
           navbar.classList.add("sticky")
           navbar.style.position='fixed'
           navbar.style.boxSizing='border-box'
+
   
         }
     } else {
@@ -48,24 +51,26 @@ function myFunction(status) {
   if(status=='notmain')
   {
       try{
-        let bodydiv = document.querySelector('.ui.cont')
-        console.log(bodydiv.getBoundingClientRect().top)
-        if(bodydiv.getBoundingClientRect().top>=90 )
+        let bodydiv = document.querySelector('body')
+        console.log('bruh',bodydiv.getBoundingClientRect().top)
+        if(bodydiv.getBoundingClientRect().top==0 )
         {
      navbar.classList.remove("sticky");
         navbar.style.position=null
             navbar.style.boxSizing=null
-     
+            navbar.style.width='100%'
         }
       if (navbar.getBoundingClientRect().top !=0) {
           if(!navbar.classList.add("sticky"))
           {
          //     console.log("sticky")
                
-            
+           
             navbar.classList.add("sticky")
             navbar.style.position='fixed'
             navbar.style.boxSizing='border-box'
+            navbar.style.width='98.8%'
+            
     
           }
       } else {
@@ -75,7 +80,7 @@ function myFunction(status) {
       }
       catch(e)
       {
-    //   console.log('error ',e)
+       console.log('error ',e)
       }
       
   }
