@@ -9,6 +9,20 @@ body {
   overflow-x: hidden !important;
 }
 
+
+
+
+
+body::-webkit-scrollbar-track
+{
+	z-index: 10;
+}
+
+
+
+
+
+
 body::-webkit-scrollbar-track
 {
 	border: 1px solid black;
@@ -32,7 +46,21 @@ background:  linear-gradient(#15f4ee, black);
 #content {
   overflow-x: hidden;
 }
-
+ .navbar.navbar-expand-lg  {
+  
+  background-color: rgba(0, 0, 0, 0.9);
+ 
+  
+}  
+.sticky {
+  position: fixed;
+  box-sizing: border-box;
+  top: 0;
+  
+  width: 100%;
+ z-index: 10;
+ 
+}
 .lsls {
   background-color: #00ffff !important;
   color: black !important;
@@ -443,6 +471,7 @@ nav .nav-link:hover {
 
 .navbar {
   background-color: rgba(255, 255, 255, 0.05);
+  width:100%;
 }
 
 nav .nav-link:hover {
